@@ -1,0 +1,66 @@
+body{
+	background: linear-gradient(135deg, #f5f0e8 0%, #e8ede0 100%);
+	font-family: Arial;
+}
+
+h2 {
+   font-family: "Momo Signature", cursive;
+   font-size: 28px;
+   font-weight: bold;
+   color: #556B2F;
+   text-align: center;
+}
+
+.card{
+	margin: auto;
+	padding: 25px;
+	justify-content: center;
+	width: 550px;
+	background-color: #fffdf9;
+	border-radius: 16px;
+	box-shadow: 0 4px 15px rgba(3, 10, 1, 0.65);
+	text-align: center;
+}
+
+.Card:hover {
+	box-shadow: 0 0 60px rgba(0,0,0,0.4);
+}
+
+
+input{
+	width: 100%;
+	margin: 10px 0;
+	padding: 10px;
+	border-radius: 8px;
+	border: 1px solid #ccc;
+	background-color: #fffdf9;
+}
+
+.save{
+	background: linear-gradient(135deg, #4a6635 0%, #5e8045 100%);
+	padding: 10px;
+	border-radius: 8px;
+	width: 100%;
+}
+
+.delete{
+	background: linear-gradient(135deg, #4a6635 0%, #5e8045 100%);
+	text-align: center;
+	padding: 10px;
+	border-radius: 8px;
+	width: 50%;
+}
+
+.cancel{
+	text-align: center;
+	padding: 10px;
+	margin-top: 10px;
+	border-radius: 8px;
+	background-color: #E5E5E5;
+	width: 50%;
+}
+
+button:hover, input:hover {
+    box-shadow: 0 4px 15px rgba(3, 10, 1, 0.65);
+    cursor: pointer;
+}

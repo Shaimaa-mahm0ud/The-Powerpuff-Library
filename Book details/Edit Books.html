@@ -3,6 +3,7 @@
 <head>
 	<title>Edit Book</title>
 	<link rel="stylesheet" href="../Navbar/Navbar.css">
+	<link rel="stylesheet" type="text/css" href="EditAndDelete.css">
 </head>
 
 <body>
@@ -24,17 +25,20 @@
 
 	</nav>
 	<script src="../Navbar/Navbar.js"></script>
-	<br>
-
+	<br> <br>
+	
 	<h2> Edit Book </h2>
-	<form>
-		Book Name <input type="text"> <br> <br>
-		Author <input type="text"> <br> <br>
-		Category <input type="text"> <br> <br>
-		Description <input type="text"> <br> <br>
-		<button type="submit">Save Changes</button>
-		<a href="Books list.html"><button type="button">Cancel</button></a>
-	</form>
+	<br><br>
+	<div class="card" style="display: flex;">
+		<form>
+			Book Name <input type="text"> <br> <br>
+			Author <input type="text"> <br> <br>
+			Category <input type="text"> <br> <br>
+			Description <input type="text"> <br> <br>
+			<button type="submit" class="save">Save Changes</button>
+			<a href="Admin Books list.html"><button type="button" class="cancel" style="width: 100%">Cancel</button></a>
+		</form>
+	</div>
 
 </body>
 

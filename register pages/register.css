@@ -1,33 +1,156 @@
-
 /* just for testing */
+body {
 
-.create, .submit{
+    background: linear-gradient(135deg, #f5f0e8 0%, #e8ede0 100%);
+
+}
+
+h1 {
+    color: #556B2F;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.create,
+.submit {
     background-color: rgb(72, 169, 255);
-     border-color:  rgb(72, 169, 255);
-    color: white; 
-    padding:4px;
+    border-color: rgb(72, 169, 255);
+    color: white;
+    padding: 4px;
     margin-top: 10px;
 }
-form{
-  padding: 10px;
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
+
+form {
+    padding: 10px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 button {
     border-width: 1px;
     width: 70%;
 }
-.forget{
+
+.forget {
     color: grey;
     margin-left: 6px;
+
 }
-.username, .password,.email,.confirm_password{
-    margin-bottom:10px ;
+
+.username,
+.password {
+
+    width: 100%;
+    padding: 12px;
+    margin: 0px 0 13px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+
 }
-.username,.password{
-    margin-right: 6%;
+
+.username:focus,
+.password:focus {
+    border: 1px solid #000000;
 }
-.email{
-    margin-right: 8%;
+
+
+form {
+
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 350px;
 }
+
+form:hover {
+    transition: transform 0.5s, box-shadow 0.5s;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  
+    transform: translateY(+6px);
+
+}
+
+.submit {
+    width: 100%;
+    background-color: #556B2F;
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+body.dark .submit {
+    border: 2px rgb(160, 208, 128) solid;
+      background-color: #3c3c3c;
+}
+body.dark .submit:hover{
+    transition: background-color .6s,box-shadow .6s;
+    box-shadow: 0 10px 25px rgb(160, 208, 128,0.2);
+       background-color: rgb(160, 208, 128);
+}
+
+.signup {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 15px;
+
+    padding: 10px;
+}
+
+.signup a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #556B2F;
+}
+
+.submit:hover {
+    background-color: #425c12;
+}
+
+.material-symbols-outlined {
+    font-size: 25px;
+    color: #556B2F;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    
+}
+
+.material-symbols-outlined:hover{
+    font-size: 30px;
+}
+
+body.dark {
+    background: #2c2c2c;
+    color: #f5f5f5;
+}
+
+body.dark form {
+    background-color: #3c3c3c;
+    color: #f5f5f5;
+}
+        body.dark form h1 {
+            color: rgb(160, 208, 128);
+        }
+        
+body.dark form .password ,body.dark form .username {
+  background-color: #555;
+
+}
+body.dark form .password:hover,body.dark form  .username:hover {
+ box-shadow: 0 10px 25px rgb(160, 208, 128,0.4);
+}
+body.dark  form:hover {
+    transition: transform 0.5s, box-shadow 0.5s;
+    box-shadow: 0 10px 25px rgb(160, 208, 128,0.4);
+  
+    transform: translateY(+6px);
+
+}
+

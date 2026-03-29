@@ -5,9 +5,7 @@
    font-family: Arial, sans-serif;
 }
 
-body {
-   background: AntiqueWhite;
-}
+
 
 .navbar {
    padding: 15px 20px;
@@ -15,6 +13,8 @@ body {
    justify-content: space-between;
    align-items: center;
    background: linear-gradient(190deg, #FFFAF0, #FFFAF0);
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
 
 }
 
@@ -31,7 +31,7 @@ body {
    flex: 1;
    font-size: 24px;
    font-weight: bold;
-   color: #556B2F;
+   color:#556B2F;
    text-shadow: 2px 2px 5px #556B2F;
    text-decoration: none;
 
@@ -100,3 +100,5 @@ body {
       display: block;
    }
 }
+
+

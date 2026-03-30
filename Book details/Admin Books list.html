@@ -3,6 +3,7 @@
 <head>
 	<title>Books List</title>
 	<link rel="stylesheet" href="../Navbar/Navbar.css">
+	<link rel="stylesheet" type="text/css" href="EditAndDelete.css">
 	</head>
 	
 	<body>
@@ -26,28 +27,51 @@
 		<script src="../Navbar/Navbar.js"></script>
 		<br>
 
-	<h2>Books List </h2>
-	<table width="700" , height="80" , border-collapse="collapse" , border="solid" , style="text-align: center;">
-		<tr>
-			<th>Book ID</th>
-			<th>Book Name</th>
-			<th>Author</th>
-			<th>Category</th>
-			<th>Actions</th>
-		</tr>
-		<tr>
-			<td> AS512 </td>
-			<td> Clean Code </td>
-			<td> Robert C.Martin </td>
-			<td> Programming </td>
-			<td> <a href="Edit Books.html">
-					<button> Edit </button> </a>
-				&nbsp
-				<a href="Delete Books.html">
-					<button> Delete </button> </a>
-			</td>
-		</tr>
-	</table>
-</body>
+		<h2>Books List </h2>
+		<table width="700" , height="80" , border-collapse="collapse" , border="solid" , style="text-align: center;">
+			<tr>
+				<th>Book ID</th>
+				<th>Book Name</th>
+				<th>Author</th>
+				<th>Category</th>
+				<th>Actions</th>
+			</tr>
+			<tr>
+				<td> AS512 </td>
+				<td> Clean Code </td>
+				<td> Robert C.Martin </td>
+				<td> Programming </td>
+				<td> <a href="Edit Books.html">
+						<button> Edit </button> </a>
+					&nbsp
+						<button onclick="openDeletePopup()"> Delete </button>
+				</td>
+			</tr>
+		</table>
+
+		<div id="overlay" class="overlay" style="display:none;">
+
+			<div class="card" id="confirmBox">
+			    <h2>Delete Book</h2>
+			    <br>
+			    <p>Do you really want to delete this book?</p>
+			    <br>
+
+			    <button class="delete" onclick="confirmDelete()">Yes</button>
+			    <button class="cancel" onclick="closePopup()">Cancel</button>
+			</div>
+
+			<div class="card" id="successBox" style="display:none;">
+			    <h2>Success</h2>
+			    <br>
+			    <p>Book deleted successfully ✅</p>
+			    <br>
+
+			    <button class="save" onclick="closePopup()" style="width: 50%">OK</button>
+			</div>
+
+		</div>
+		<script src="EditAndDelete.js"></script>
+	</body>
 
 </html>

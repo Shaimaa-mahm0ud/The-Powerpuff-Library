@@ -119,7 +119,7 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-.card-footer button{
+.card-footer button  {
     border: none;
     background-color: #4a6635;
     color: beige;

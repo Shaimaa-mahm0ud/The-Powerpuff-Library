@@ -2,6 +2,7 @@ const menuToggle = document.querySelector(".menu-toggle");
 const navLinks = document.querySelector(".nav-links");
 let logout=document.getElementById("logoutb");
 let login=document.getElementById("loginb");
+let removeme=document.getElementById("notInLogout");
 let isLogin=localStorage.getItem("login");
 menuToggle.onclick = function () {
     navLinks.classList.toggle("active");
@@ -14,8 +15,10 @@ localStorage.setItem("login","false");
 
 if(isLogin === "true"){
     login.style.display = "none";  
-    logout.style.display = "block"; 
+    logout.style.display = "flex"; 
+    notInLogout.style.display="flex" 
 } else {
-    login.style.display = "block";  
-    logout.style.display = "none";  
+    login.style.display = "flex";  
+    logout.style.display = "none"; 
+    notInLogout.style.display="none" 
 }

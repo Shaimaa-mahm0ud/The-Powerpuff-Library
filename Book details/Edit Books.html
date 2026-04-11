@@ -1,12 +1,13 @@
 <html>
 
-<head>
-	<title>Edit Book</title>
-	<link rel="stylesheet" href="../Navbar/Navbar.css">
-	<link rel="stylesheet" type="text/css" href="EditAndDelete.css">
-</head>
+	<head>
+		<title>Edit Book</title>
+		<link rel="stylesheet" href="../Navbar/Navbar.css">
+		<link rel="stylesheet" type="text/css" href="EditAndDelete.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=dark_mode" />
+	</head>
 
-<body>
+	<body>
 		<nav class="navbar">
 			<a href="Admin Books list.html" target="_self" class="logo">Book Hub</a>
 			<ul class="nav-links">
@@ -23,36 +24,37 @@
             <li><a id="loginb" href="../register pages\login.html" target="_self">Log In</a></li>
 
 			</ul>
-		<div class="menu-toggle">&#9776;</div>
+			<button class="material-symbols-outlined" title="change_mode" onclick="toggleDarkMode()">dark_mode</button>
+			<div class="menu-toggle">&#9776;</div>
 
-	</nav>
-	<script src="../Navbar/Navbar.js"></script>
-	<br> <br>
-	
-	<h2> Edit Book </h2>
-	<br><br>
-	<div class="card" style="display: flex;">
-		<form>
-			Book Name <input type="text" id="bookName"> <br> <br>
-			Author <input type="text" id="author"> <br> <br>
-			Category <input type="text" id="category"> <br> <br>
-			Description <input type="text" id="description"> <br> <br>
-			<button type="submit" class="save" onclick="confirmEdit(event)">Save Changes</button>
-			<a href="Admin Books list.html"><button type="button" class="cancel" style="width: 100%">Cancel</button></a>
-		</form>
-	</div>
-
-	<div id="overlay" class="overlay" style="display:none;">
-		<div class="card" id="successBox" style="display:none;">
-		    <h2>Success</h2>
-		    <br>
-		    <p>Book edited successfully ✅</p>
-		    <br>
-
-		    <button class="save" onclick="closePopup()" style="width: 50%">OK</button>
+		</nav>
+		<script src="../Navbar/Navbar.js"></script>
+		<br> <br>
+		
+		<h2> Edit Book </h2>
+		<br><br>
+		<div class="card" style="display: flex;">
+			<form>
+				Book Name <input type="text" id="bookName"> <br> <br>
+				Author <input type="text" id="author"> <br> <br>
+				Category <input type="text" id="category"> <br> <br>
+				Description <input type="text" id="description"> <br> <br>
+				<button type="submit" class="save" onclick="confirmEdit(event)">Save Changes</button>
+				<a href="Admin Books list.html"><button type="button" class="cancel" style="width: 100%">Cancel</button></a>
+			</form>
 		</div>
-    </div>
-	<script src="EditAndDelete.js"></script>
-</body>
+
+		<div id="overlay" class="overlay" style="display:none;">
+			<div class="card" id="successBox" style="display:none;">
+			    <h2>Success</h2>
+			    <br>
+			    <p>Book edited successfully ✅</p>
+			    <br>
+
+			    <button class="save" onclick="closePopup()" style="width: 50%">OK</button>
+			</div>
+	    </div>
+		<script src="EditAndDelete.js"></script>
+	</body>
 
 </html>

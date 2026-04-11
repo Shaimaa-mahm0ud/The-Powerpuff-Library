@@ -117,3 +117,10 @@ window.onload = function () {
     renderCards(borrowedBooks);
 };
 
+window.onload = function () {
+    renderCards(borrowedBooks); 
+
+    if (typeof applyTheme === "function") {
+        applyTheme();
+    }
+};

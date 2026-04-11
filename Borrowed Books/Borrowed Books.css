@@ -53,10 +53,10 @@ body {
 }
 
 .card-headr {
-    
+
     display: grid;
     grid-template-columns: auto auto;
-    color:white;
+    color: white;
     height: 2cm;
     padding: 3px 4px;
     background: linear-gradient(135deg, #4a6635 0%, #5e8045 100%);
@@ -69,14 +69,14 @@ body {
 
 .card-headr h3 {
     grid-column: 1 / 3;
-        
-        font-size: 0.95rem;
-        margin: 0;
+
+    font-size: 0.95rem;
+    margin: 0;
 }
 
 .card-headr span {
     grid-column: 1/1;
-        font-size: 0.78rem;
+    font-size: 0.78rem;
 }
 
 .card-headr mark {
@@ -93,7 +93,8 @@ body {
 .card-body {
     padding: 0.5cm;
 }
-.card-body  b{
+
+.card-body b {
     direction: rtl;
 }
 
@@ -109,99 +110,88 @@ body {
 
 }
 
-.status-active{
+.status-active {
     font-size: 0.78rem;
     margin-left: 118px;
     background: #e8f5e9;
-     color: #2e7d32;
-        width: 65px;
-        border-radius: 10px;
-        text-align: center;
-        border: solid 1px;
+    color: #2e7d32;
+    width: 65px;
+    border-radius: 10px;
+    text-align: center;
+    border: solid 1px;
 }
-.status-overdue{
+
+.status-overdue {
     margin-left: 118px;
-    background:rgba(246, 69, 69, 0.2);
-        color:rgb(200, 0, 0);
-        border: solid 1px rgb(200, 0, 0);
-        width: 65px;
+    background: rgba(246, 69, 69, 0.2);
+    color: rgb(200, 0, 0);
+    border: solid 1px rgb(200, 0, 0);
+    width: 65px;
     font-size: 0.78rem;
-        border-radius: 10px;
+    border-radius: 10px;
     padding: 1px 6px;
-        text-align: center;
-}
-.actions{
-    text-align:end;
-}
-.actions button{
-
-padding: 5px;
-border-radius: 14px ;
-border: solid #3e521c 2px;
-font-size: 0.78rem;
+    text-align: center;
 }
 
-.button-return{
-background: #4a6635;
-color:white;
-transition: 0.3s ease-in-out;
-}
-.button-details{
-color: #3e521c;
-transition: 0.3s ease-in-out;
+.actions {
+    text-align: end;
 }
 
-.button-details:hover{
+.actions button {
+
+    padding: 5px;
+    border-radius: 14px;
+    border: solid #3e521c 2px;
+    font-size: 0.78rem;
+}
+
+.button-return {
+    background: #4a6635;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.button-details {
+    color: #3e521c;
+    transition: 0.3s ease-in-out;
+}
+
+.button-details:hover {
     background-color: #93bb77;
 }
-.button-return:hover{
-    background-color:  #93bb77;
-}
 
-:root {
-  --olive-dark: #344e41;
-  --olive: #588157;
-  --olive-light: #a3b18a;
-  --beige: #f5f5dc;
-  --bg: #e8ede0;      
-  --card-bg: #fdf9f2;  
+.button-return:hover {
+    background-color: #93bb77;
 }
 
 
-.navbar {
-  
-  top: 0;
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;  
-  align-items: center;
-  padding: 18px 50px;
-  background: linear-gradient(135deg, #4a6635 0%, #5e8045 100%);
-  box-shadow: 0 6px 15px rgba(36, 52, 32, 0.3);
-  z-index: 10;
-  gap: 10px;
+
+
+
+body.dark {
+    background: #2c2c2c;
+    color: #f5f5f5;
 }
 
-.navbar .logo {
-  font-size: 26px;
-  font-weight: bold;
-  color: var(--beige);
-  text-decoration: none;
-  margin-right: auto; 
+
+body.dark .state-card,
+body.dark .book-cards {
+    background: #3c3c3c;
+    border: 1px solid #555;
+    color: #f5f5f5;
 }
 
-.nav-links a {
-  color: var(--beige);
-  padding: 8px 14px;
-  border-radius: 10px;
-  border: 1px solid transparent;
-  text-decoration: none;
-  transition: 0.3s;
-  font-size: 14px;
+body.dark .card-body span,
+body.dark .header p {
+    color: #999;
 }
 
-.nav-links a:hover {
-  border: 1px solid rgba(245, 240, 232, 0.6);
-  box-shadow: 0 0 8px rgba(245, 240, 232, 0.3);
-  color: var(--beige);
+
+body.dark .info-row b {
+    color: #ffffff;
+}
+
+body.dark .button-details {
+    color: #9be67d;
+    border-color: #9be67d;
 }

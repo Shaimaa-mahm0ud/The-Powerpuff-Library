@@ -13,7 +13,7 @@ let borrowedBooks = [
         author: "Andrew Hunt",
         category: "Programming",
         borrowDate: "Feb 01, 2026",
-        dueDate: "Mar 01, 2026"
+        dueDate: "Mar 01, 2027"
     }
 ];
 

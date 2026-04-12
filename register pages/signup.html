@@ -27,21 +27,21 @@
     </nav>
     <script src="../Navbar/Navbar.js"></script>
     <br>
-    <form action="login.html">
+    <form  id="signform">
         <h1>Sign up</h1>
         <div><label for="username" class="usernamelabel">Username</label>
-        <input type="text" name="neme" class="username" required placeholder="alaa@mamdouh1"></div>
+        <input type="text" name="neme" class="username" required placeholder="alaa@mamdouh1" id="username"></div>
         
         <div><label for="password" class="passwordlabel">Password</label>
-        <input type="password" required minlength="10" class="password" ></div>
+        <input type="password" required minlength="10" class="password" id="password"></div>
         <div> <label for="confirm_passwordllabel">Confirm password</label>
         <input type="password" required minlength="10" class="confirm_password"></div>
       
        <div><label for="email" class="emaillable">Email</label>
         <input type="email" required placeholder="alaa_fci@gmail.com" class="email"></div>
         
-       <div><input type="radio" class="user" name="type"> <label for="user">User</label>
-        <input type="radio" class="admin" name="type"> <label for="admin">Admin</label></div>
+       <div><input type="radio" class="user" name="type" value="user"> <label for="user">User</label>
+        <input type="radio" class="admin" name="type" value="admin"> <label for="admin">Admin</label></div>
         <input type="submit" value="Create" class="create">
         <div class="have_acc"> 
            <div class="login">Already have an account? <a href="login.html" >login</a></div> 

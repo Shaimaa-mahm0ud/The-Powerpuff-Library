@@ -173,3 +173,28 @@ button {
   box-shadow: 0 0 8px rgba(245,245,220,0.6);
   transform: scale(1.05);
 }
+.status-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #2e7d32;
+    border-radius: 50%;
+}
+.status-pill {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: 1px solid #c8e6c9;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+
+.info-value {
+margin: 50px ;
+    color: #444;
+    flex: 1; 
+    font-weight: 500;
+}
